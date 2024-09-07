@@ -70,6 +70,10 @@ int main() {
 
         scanf("%s", guess_word);
         len_guess = strlen(guess_word);
+
+        if(len_guess<len-1){
+            continue;
+        }
         
         if(len == 1){
             printf("%s\n", guess_word);
