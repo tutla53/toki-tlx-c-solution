@@ -16,10 +16,12 @@ int compareName(const void* a, const void* b){
 
 int main(){
     int N,Q;
+    Wartel_t* wartel;
+    Wartel_t* result;
 
     scanf("%d %d", &N, &Q);
-    Wartel_t wartel[N];
-    Wartel_t* result;
+
+    wartel = malloc(N * sizeof(Wartel_t));
     
     for(int i=0;i<N;i++){
         scanf("%s %s", wartel[i].name, wartel[i].num);
@@ -37,5 +39,7 @@ int main(){
             printf("NIHIL\n");
         }
     }
+    
+    free(wartel);
     return 0;
 }
