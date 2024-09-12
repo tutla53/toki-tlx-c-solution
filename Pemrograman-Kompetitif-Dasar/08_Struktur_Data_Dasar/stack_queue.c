@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdbool.h>
 
 struct Node {
     int data;
@@ -113,25 +112,28 @@ int main(void){
     scanf("%d", &N);
 
     for (int i =0; i<N;i++){
+        int d;
         scanf("%s", comm_msg);
-        if(strcmp(comm_msg, "push_back")==0){
-            int d;
-            scanf("%d", &d);
-            push_back(&head,&tail,d);
-        }
-        else if(strcmp(comm_msg, "push_front")==0){
-            int d;
-            scanf("%d", &d);
-            push_front(&head, &tail, d);
-        }
-        else if(strcmp(comm_msg, "pop_back")==0){
-            pop(&head, &tail, tail);
-        }
-        else if(strcmp(comm_msg, "pop_front")==0){
-            pop(&head, &tail, head);
+        switch(comm_msg[5]){
+            case 'b':
+                scanf("%d", &d);
+                push_back(&head,&tail,d);
+                break;
+            
+            case 'f':
+                scanf("%d", &d);
+                push_front(&head, &tail, d);
+                break;
+
+            case 'a':
+                pop(&head, &tail, tail);
+                break;
+
+            default:
+                pop(&head, &tail, head);
         }
     }
-    
+
     printList(head);
     
     return 0;
