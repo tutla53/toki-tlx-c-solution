@@ -1,9 +1,9 @@
 # TOKI TLX - Competitive Programming Training Gate
-Re-solve TOKI TLX Competitive Programming Problem only with C  (https://tlx.toki.id/)
-
-```diff
+Solve <a href="https://tlx.toki.id/"> TOKI TLX Competitive Programming Problem</a> only with C <br>
+<br>
 |✔️ = Accepted | ❌ = Wrong Answer | ⏳ = Ongoing|
 
+```diff
 TOKI TLX Solution in C 
    ├── Pemrograman-Kompetitif_Dasar
        ├── 01 Perkenalan Pemrograman Kompetitif (4/4) 
