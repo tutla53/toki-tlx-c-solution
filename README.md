@@ -17,11 +17,11 @@ TOKI TLX Solution in C
        │   ├──  B. Prima Ke-K ✔️
        │   └──  C. Pasar Rakyat ✔️
        │
-       ├── 03 Pencarian dan Pengurutan (5/9)
+       ├── 03 Pencarian dan Pengurutan (6/9)
        │   ├──  A. Kupon Berhadiah ✔️
        │   ├──  B. Peta Menarik ✔️
        │   ├──  C. Wartel ✔️
-       │   ├──  D. Pendataan Berat Bebek ⏳
+       │   ├──  D. Pendataan Berat Bebek ✔️
        │   ├──  E. Pertemuan Pak Dengklek ✔️
        │   ├──  F. Pesta Bebek 
        │   ├──  G. Kualitas Baju
