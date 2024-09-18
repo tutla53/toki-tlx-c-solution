@@ -17,7 +17,7 @@ TOKI TLX Solution in C
        │   ├──  B. Prima Ke-K ✔️
        │   └──  C. Pasar Rakyat ✔️
        │
-       ├── 03 Pencarian dan Pengurutan (6/9)
+       ├── 03 Pencarian dan Pengurutan (8/9)
        │   ├──  A. Kupon Berhadiah ✔️
        │   ├──  B. Peta Menarik ✔️
        │   ├──  C. Wartel ✔️
