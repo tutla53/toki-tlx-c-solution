@@ -1,5 +1,5 @@
 # TOKI TLX - Competitive Programming Training Gate
-Solve <a href="https://tlx.toki.id/"> TOKI TLX Competitive Programming Problem</a> only with C <br>
+Solve Indonesian Online Judge 🇮🇩 <a href="https://tlx.toki.id/">TLX Competitive Programming Problem</a> only with C <br>
 <br>
 |✔️ = Accepted | ❌ = Wrong Answer | ⏳ = Ongoing|
 
