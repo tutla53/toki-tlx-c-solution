@@ -23,9 +23,9 @@ TOKI TLX Solution in C
        │   ├──  C. Wartel ✔️
        │   ├──  D. Pendataan Berat Bebek ✔️
        │   ├──  E. Pertemuan Pak Dengklek ✔️
-       │   ├──  F. Pesta Bebek 
-       │   ├──  G. Kualitas Baju
-       │   ├──  H. Membeli Beras
+       │   ├──  F. Pesta Bebek ✔️
+       │   ├──  G. Kualitas Baju ⏳
+       │   ├──  H. Membeli Beras ⏳
        │   └──  I. Terpendek Ke-K ✔️
        │
        ├── 04 Brute Force (0/4)
