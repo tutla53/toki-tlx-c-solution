@@ -7,7 +7,7 @@ int compare(const void* a, const void* b) {
 
 int main(){
     int* arr;
-    int N, front, rear, sum;
+    int N;
 
     scanf("%d", &N);
     arr = malloc(N * sizeof(int));
@@ -22,11 +22,7 @@ int main(){
         printf("%d.0\n",arr[N>>1]);
     }
     else{
-        sum = arr[N>>1]+arr[(N>>1)-1];
-        front = sum>>1;
-        rear = 5*(sum&1);
-
-        printf("%d.%d\n", front, rear);
+        printf("%d.%d\n", (arr[N>>1]+arr[(N>>1)-1])>>1, 5*((arr[N>>1]+arr[(N>>1)-1])&1));
     }
 
     return 0;
