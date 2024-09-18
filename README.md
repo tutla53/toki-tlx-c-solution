@@ -24,7 +24,7 @@ TOKI TLX Solution in C
        │   ├──  D. Pendataan Berat Bebek ✔️
        │   ├──  E. Pertemuan Pak Dengklek ✔️
        │   ├──  F. Pesta Bebek ✔️
-       │   ├──  G. Kualitas Baju ⏳
+       │   ├──  G. Kualitas Baju ✔️
        │   ├──  H. Membeli Beras ⏳
        │   └──  I. Terpendek Ke-K ✔️
        │
