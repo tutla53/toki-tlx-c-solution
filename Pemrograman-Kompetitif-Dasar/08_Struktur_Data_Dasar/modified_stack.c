@@ -87,10 +87,8 @@ int main(){
                         else{
                             data -= my_stack->freq;
                             pop(&my_stack);
-                        }
-                        
+                        } 
                     }
-                    
                 }
                 break;
             
