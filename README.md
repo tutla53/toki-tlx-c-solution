@@ -63,7 +63,7 @@ TOKI TLX Solution in C
        ├── 08_Struktur_Data_Dasar (2/5)
        │   ├──  A. Stack and Queue ✔️
        │   ├──  B. Modified Queue ✔️
-       │   ├──  C. Modified Stack ⏳
+       │   ├──  C. Modified Stack ✔️
        │   ├──  D. Barisan Intip
        │   └──  E. Penghancuran Batu ⏳
        │
