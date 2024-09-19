@@ -28,8 +28,8 @@ TOKI TLX Solution in C
        │   ├──  H. Membeli Beras ✔️
        │   └──  I. Terpendek Ke-K ✔️
        │
-       ├── 04 Brute Force (0/4)
-       │   ├──  A. Refleksi Matriks
+       ├── 04 Brute Force (1/4)
+       │   ├──  A. Refleksi Matriks ✔️
        │   ├──  B. Grup Piala Dunia
        │   ├──  D. Kontes Menari
        │   ├──  E. Jawbreaker II: Cari Terbesar
