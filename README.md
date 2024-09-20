@@ -60,12 +60,12 @@ TOKI TLX Solution in C
        │   ├──  F. Waterfall
        │   └──  G. Jabat Tangan
        │
-       ├── 08_Struktur_Data_Dasar (3/5)
+       ├── 08_Struktur_Data_Dasar (4/5)
        │   ├──  A. Stack and Queue ✔️
        │   ├──  B. Modified Queue ✔️
        │   ├──  C. Modified Stack ✔️
        │   ├──  D. Barisan Intip
-       │   └──  E. Penghancuran Batu ⏳
+       │   └──  E. Penghancuran Batu ✔️
        │
        ├── 09_Perkenalan_Graf (0/5)
        │
