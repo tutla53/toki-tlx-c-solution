@@ -73,7 +73,11 @@ TOKI TLX Solution in C
        │
        ├── 11_Algoritma_Graf (0/4)
        │
-       ├── 12_Dasar_Dasar_Geometri (0/4)
+       ├── 12_Dasar_Dasar_Geometri (1/4)
+       │   ├──  A. Dua Gelang ✔️
+       │   ├──  B. Segmen Garis 
+       │   ├──  C. Segitiga Bebek 
+       │   └──  D. Menutup Tiang 
        │
        └── 13_Memenangkan_Kompetisi (0/10)
 ```
