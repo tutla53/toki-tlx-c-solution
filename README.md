@@ -6,7 +6,7 @@ Solve Indonesian Online Judge 🇮🇩 <a href="https://tlx.toki.id/">TLX Compet
 
 <table>
 <tr>
-<td> Old (until 24 Sep 2024) </td> <td> New (from 25 Sep 2024) </td>
+<th>New (from 25 Sep 2024)</th> <th>Old (until 24 Sep 2024)</th>
 </tr>
 
 <tr>
