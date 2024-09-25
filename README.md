@@ -17,8 +17,8 @@ TOKI TLX Solution in C
 ├── Pemrograman-Kompetitif_Dasar
    ├── 01 Perkenalan Pemrograman Kompetitif (2/4) 
    │   ├──  A. Rotasi Matriks ✅
-   │   ├──  B. Modus Terbesar 
-   │   ├──  C. Membalik yang Terbalik
+   │   ├──  B. Modus Terbesar ✅
+   │   ├──  C. Membalik yang Terbalik ✅
    │   └──  D. Hapus Satu Saja! ✅
    │
    ├── 02 Matematika Diskret Dasar (2/4)
