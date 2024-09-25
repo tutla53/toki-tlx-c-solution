@@ -7,29 +7,29 @@ Solve Indonesian Online Judge 🇮🇩 <a href="https://tlx.toki.id/">TLX Compet
 TOKI TLX Solution in C 
    ├── Pemrograman-Kompetitif_Dasar
        ├── 01 Perkenalan Pemrograman Kompetitif (4/4) 
-       │   ├──  A. Seleksi Olimpiade ✔️
-       │   ├──  B. Runtuh ✔️
-       │   ├──  C. Wildcard ✔️
-       │   └──  D. Hapus Satu Saja! ✔️
+       │   ├──  A. Seleksi Olimpiade ✅
+       │   ├──  B. Runtuh ✅
+       │   ├──  C. Wildcard ✅
+       │   └──  D. Hapus Satu Saja! ✅
        │
        ├── 02 Matematika Diskret Dasar (3/3)
-       │   ├──  A. Penjumlahan Pecahan ✔️
-       │   ├──  B. Prima Ke-K ✔️
-       │   └──  C. Pasar Rakyat ✔️
+       │   ├──  A. Penjumlahan Pecahan ✅
+       │   ├──  B. Prima Ke-K ✅
+       │   └──  C. Pasar Rakyat ✅
        │
        ├── 03 Pencarian dan Pengurutan (9/9)
-       │   ├──  A. Kupon Berhadiah ✔️
-       │   ├──  B. Peta Menarik ✔️
-       │   ├──  C. Wartel ✔️
-       │   ├──  D. Pendataan Berat Bebek ✔️
-       │   ├──  E. Pertemuan Pak Dengklek ✔️
-       │   ├──  F. Pesta Bebek ✔️
-       │   ├──  G. Kualitas Baju ✔️
-       │   ├──  H. Membeli Beras ✔️
-       │   └──  I. Terpendek Ke-K ✔️
+       │   ├──  A. Kupon Berhadiah ✅
+       │   ├──  B. Peta Menarik ✅
+       │   ├──  C. Wartel ✅
+       │   ├──  D. Pendataan Berat Bebek ✅
+       │   ├──  E. Pertemuan Pak Dengklek ✅
+       │   ├──  F. Pesta Bebek ✅
+       │   ├──  G. Kualitas Baju ✅
+       │   ├──  H. Membeli Beras ✅
+       │   └──  I. Terpendek Ke-K ✅
        │
        ├── 04 Brute Force (1/4)
-       │   ├──  A. Refleksi Matriks ✔️
+       │   ├──  A. Refleksi Matriks ✅
        │   ├──  B. Grup Piala Dunia
        │   ├──  D. Kontes Menari
        │   ├──  E. Jawbreaker II: Cari Terbesar
@@ -54,18 +54,18 @@ TOKI TLX Solution in C
        ├── 07_Dynamic_Programming (1/7)
        │   ├──  A. Uang Kembalian
        │   ├──  B. Knapsack
-       │   ├──  C. Penukaran Emas ✔️
+       │   ├──  C. Penukaran Emas ✅
        │   ├──  D. Palindrom
        │   ├──  E. Perkalian Matriks Bebek
        │   ├──  F. Waterfall
        │   └──  G. Jabat Tangan
        │
        ├── 08_Struktur_Data_Dasar (5/5)
-       │   ├──  A. Stack and Queue ✔️
-       │   ├──  B. Modified Queue ✔️
-       │   ├──  C. Modified Stack ✔️
-       │   ├──  D. Barisan Intip ✔️
-       │   └──  E. Penghancuran Batu ✔️
+       │   ├──  A. Stack and Queue ✅
+       │   ├──  B. Modified Queue ✅
+       │   ├──  C. Modified Stack ✅
+       │   ├──  D. Barisan Intip ✅
+       │   └──  E. Penghancuran Batu ✅
        │
        ├── 09_Perkenalan_Graf (0/5)
        │
@@ -74,7 +74,7 @@ TOKI TLX Solution in C
        ├── 11_Algoritma_Graf (0/4)
        │
        ├── 12_Dasar_Dasar_Geometri (1/4)
-       │   ├──  A. Dua Gelang ✔️
+       │   ├──  A. Dua Gelang ✅
        │   ├──  B. Segmen Garis 
        │   ├──  C. Segitiga Bebek 
        │   └──  D. Menutup Tiang 
