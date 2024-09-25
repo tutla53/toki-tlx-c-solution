@@ -1,7 +1,7 @@
 # TOKI TLX - Competitive Programming Training Gate
 Solve Indonesian Online Judge 🇮🇩 <a href="https://tlx.toki.id/">TLX Competitive Programming Problem</a> only with C <br>
 <br>
-|✔️ = Accepted | ❌ = Wrong Answer | ⏳ = Ongoing|
+|✅ = Accepted | ❌ = Wrong Answer | ⏳ = Ongoing|
 
 ```diff
 TOKI TLX Solution in C 
@@ -75,7 +75,7 @@ TOKI TLX Solution in C
        │
        ├── 12_Dasar_Dasar_Geometri (1/4)
        │   ├──  A. Dua Gelang ✅
-       │   ├──  B. Segmen Garis 
+       │   ├──  B. Segmen Garis ❌
        │   ├──  C. Segitiga Bebek 
        │   └──  D. Menutup Tiang 
        │
