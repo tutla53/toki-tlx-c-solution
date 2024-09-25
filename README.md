@@ -1,7 +1,7 @@
 # TOKI TLX - Competitive Programming Training Gate
 Solve Indonesian Online Judge 🇮🇩 <a href="https://tlx.toki.id/">TLX Competitive Programming Problem</a> only with C <br>
 <br>
-|✅ = Accepted | ❌ = Wrong Answer | ⏳ = Ongoing|
+|✅ Accepted | ❌ Wrong Answer | ⏳ Ongoing|
 | ---      | ---       |---       |
 
 <table>
