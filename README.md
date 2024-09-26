@@ -21,12 +21,12 @@ TOKI TLX Solution in C
    │   ├──  C. Membalik yang Terbalik ✅
    │   └──  D. Hapus Satu Saja! ✅
    │
-   ├── 02 Matematika Diskret Dasar (3/5)
+   ├── 02 Matematika Diskret Dasar (4/5)
    │   ├──  A. Penjumlahan Pecahan ✅
    │   ├──  B. Prima Ke-K ✅
    │   ├──  C. Bilangan Agak Prima 
    │   ├──  D. Kelipatan 4 atau 7 ✅
-   │   └──  D. Hadiah 3
+   │   └──  D. Hadiah 3 ✅
    │
    ├── 03 Pencarian dan Pengurutan (9/9)
    │   ├──  A. Kupon Berhadiah ✅
