@@ -48,11 +48,11 @@ TOKI TLX Solution in C
    │   ├──  G. Jawbreaker IV: Cari Terbesar 2 Langkah
    │   └──  H. Paduan Suara
    │
-   ├── 05_Divide_and_Conquer (2/4)
+   ├── 05_Divide_and_Conquer (3/4)
    │   ├──  A. Parsel Telur Bebek
    │   ├──  B. Pangkat Besar ✅
    │   ├──  C. Hadiah ✅
-   │   └──  D. Barisan Hewan Ternak
+   │   └──  D. Barisan Hewan Ternak ✅
    │
    ├── 06_Greedy (0/6)
    │   ├──  A. Rak Buku
