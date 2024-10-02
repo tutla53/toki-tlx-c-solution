@@ -14,7 +14,7 @@ Solve Indonesian Online Judge 🇮🇩 <a href="https://tlx.toki.id/">TLX Compet
    
 ```
 TOKI TLX Solution in C 
-├── Pemrograman-Kompetitif_Dasar
+├── Pemrograman-Kompetitif_Dasar (32/73) 43%
    ├── 01 Perkenalan Pemrograman Kompetitif (4/4) 
    │   ├──  A. Rotasi Matriks ✅
    │   ├──  B. Modus Terbesar ✅
