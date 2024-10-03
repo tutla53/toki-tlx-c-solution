@@ -14,7 +14,7 @@ Solve Indonesian Online Judge 🇮🇩 <a href="https://tlx.toki.id/">TLX Compet
    
 ```
 TOKI TLX Solution in C 
-├── Pemrograman-Kompetitif_Dasar (36/73) 49%
+├── Pemrograman-Kompetitif_Dasar (37/73) 50.7%
    ├── 01 Perkenalan Pemrograman Kompetitif (4/4) 
    │   ├──  A. Rotasi Matriks ✅
    │   ├──  B. Modus Terbesar ✅
@@ -78,7 +78,12 @@ TOKI TLX Solution in C
    │   ├──  D. Barisan Intip ✅
    │   └──  E. Penghancuran Batu ✅
    │
-   ├── 09_Perkenalan_Graf (0/5)
+   ├── 09_Perkenalan_Graf (1/5)
+   │   ├──  A. Maze ✅
+   │   ├──  B. Disconnected Graph 
+   │   ├──  C. Evolusi 
+   │   ├──  D. Jalan Tol Menuju Roma
+   │   └──  E. Tantangan Dengklek
    │
    ├── 10_Struktur_Data_Non_Linear (0/3)
    │
