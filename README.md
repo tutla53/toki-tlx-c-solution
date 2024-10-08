@@ -1,14 +1,14 @@
 # TOKI TLX - Competitive Programming Training Gate
 Solve Indonesian Online Judge 🇮🇩 <a href="https://tlx.toki.id/">TLX Competitive Programming Problem</a> only with C <br>
-<br>
 |✅ Accepted | ❌ Wrong Answer | ⏳ Ongoing|
 | ---      | ---       |---       |
 
+
+## Pemrograman Kompetitif Dasar
 <table>
 <tr>
 <th>New (from Oct 2024)</th> <th>Old (until Sep 2024)</th>
 </tr>
-
 <tr>
 <td valign="top">  
    
@@ -163,9 +163,5 @@ TOKI TLX Solution in C
 ```
 
 </td> 
-
-
 </tr>
-
 </table>
-
