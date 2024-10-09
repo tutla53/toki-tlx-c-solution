@@ -20,14 +20,12 @@ Stack_t* createStackNode(char data[25]){
 
 void push(Stack_t** st, char data[25]){
     Stack_t* new_node = createStackNode(data);
-
     new_node->next = (*st);
     *st = new_node;   
 }
 
 void pop(Stack_t** st) {
     if ((*st) == NULL) return;
-
     Stack_t* temp = *st;
     *st = (*st)->next;
     free(temp);
@@ -50,23 +48,7 @@ int search_value(Node_t* sp[], int lenSP, char key[25]){
     return -1;
 }
 
-void print_ancestor(Node_t* sp){
-    Node_t* temp = sp;
-    Stack_t* st = NULL;
-    
-    while(temp->prev != NULL){
-        push(&st, temp->name);
-        temp = temp->prev;
-    }
-    push(&st, temp->name);
-
-    while(st!=NULL){
-        printf("%s\n", st->data);
-        pop(&st);
-    }
-}
-
-int print_ancestor_2(Node_t* sp, char key[25]){
+int print_ancestor(Node_t* sp, char key[25]){
     Node_t* temp = sp;
     Stack_t* st = NULL;
     int found = 0;
@@ -86,7 +68,6 @@ int print_ancestor_2(Node_t* sp, char key[25]){
     }
     return found;
 }
-
 
 int main(void){
     int N, M, idx=0, A_idx, B_idx, f1, f2;
@@ -122,8 +103,8 @@ int main(void){
     A_idx = search_value(species_list, N, A);
     B_idx = search_value(species_list, N, B);
 
-    f1 = print_ancestor_2(species_list[A_idx], B);
-    f2 = print_ancestor_2(species_list[B_idx], A);
+    f1 = print_ancestor(species_list[A_idx], B);
+    f2 = print_ancestor(species_list[B_idx], A);
 
     if((f1 == 0) && (f2 == 0)) printf("TIDAK MUNGKIN\n");
 
