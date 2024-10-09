@@ -2,78 +2,130 @@
 #include<stdlib.h>
 #include<string.h>
 
+typedef struct{
+    void *next;
+    char data[25];
+} Stack_t;
+
 typedef struct Node{
     char name[25];
     struct Node* prev;
 } Node_t;
 
-typedef struct List{
-    Node_t *node;
-}List_t;
-
-int compare(const void* a, const void* b){ 
-    
-    const char* idA = ((Node_t*)a)->name; 
-    const char* idB = ((Node_t*)b)->name; 
-  
-    return strcmp(idA,idB); 
+Stack_t* createStackNode(char data[25]){
+    Stack_t* new_node = malloc(sizeof(Stack_t));
+    strcpy(new_node->data, data);
+    return new_node;
 }
 
-Node_t createNode(char name[25]){
-    Node_t node;
-    strcpy(node.name, name);
-    node.prev = NULL;
+void push(Stack_t** st, char data[25]){
+    Stack_t* new_node = createStackNode(data);
+
+    new_node->next = (*st);
+    *st = new_node;   
+}
+
+void pop(Stack_t** st) {
+    if ((*st) == NULL) return;
+
+    Stack_t* temp = *st;
+    *st = (*st)->next;
+    free(temp);
+}
+
+Node_t* createNode(char name[25]){
+    Node_t* node = malloc(sizeof(Node_t));
+    strcpy(node->name, name);
+    node->prev = NULL;
 
     return node;
 }
 
-void printancestor(Node_t* Nd){
-    Node_t* temp = Nd;
-    while(temp != NULL){
-        printf("%s->", temp->name);
-        temp = temp->prev;
+int search_value(Node_t* sp[], int lenSP, char key[25]){
+    for(int i=0; i<lenSP; i++){
+        if(strcmp(key, sp[i]->name)==0){
+            return i;
+        }
     }
-    printf("NULL\n");
+    return -1;
 }
 
+void print_ancestor(Node_t* sp){
+    Node_t* temp = sp;
+    Stack_t* st = NULL;
+    
+    while(temp->prev != NULL){
+        push(&st, temp->name);
+        temp = temp->prev;
+    }
+    push(&st, temp->name);
+
+    while(st!=NULL){
+        printf("%s\n", st->data);
+        pop(&st);
+    }
+}
+
+int print_ancestor_2(Node_t* sp, char key[25]){
+    Node_t* temp = sp;
+    Stack_t* st = NULL;
+    int found = 0;
+    
+    while(!found){
+        push(&st, temp->name);
+        if (strcmp(key, temp->name)==0) found=1;
+        if(temp->prev == NULL) break; 
+        temp = temp->prev;
+    }
+
+    if(found){
+        while(st!=NULL){
+            printf("%s\n", st->data);
+            pop(&st);
+        }
+    }
+    return found;
+}
+
+
 int main(void){
-    int N, M, idx=0;
-    char dummy_name[25] = "ZZZZZZZZZZZZZZZZZZZZ";
+    int N, M, idx=0, A_idx, B_idx, f1, f2;
+    char dummy_name[25] = "ZZZZZZZZZZZZZZZZZZZZ", A[25], B[25];
     scanf("%d %d", &N, &M);
-    Node_t *P_in_list, *C_in_list;
-    Node_t species_list[N];
+    Node_t* species_list[N];
 
     for(int i=0;i<N;i++) species_list[i] = createNode(dummy_name);
 
     for(int i=0; i<M; i++){
         char P[25], C[25];
+        int P_idx, C_idx;
+
         scanf("%s %s", P, C);
-        Node_t P_temp = createNode(P);
-        Node_t C_temp = createNode(C);
+        Node_t* P_temp = createNode(P);
+        Node_t* C_temp = createNode(C);
 
-        qsort(species_list, N, sizeof(Node_t), compare);
-        P_in_list = bsearch(&P, species_list, N, sizeof(Node_t), compare);
-    
-        if(P_in_list == NULL){
+        P_idx = search_value(species_list, idx, P);
+        C_idx = search_value(species_list, idx, C);
+
+        if(C_idx == -1)species_list[idx++] = C_temp;
+        else C_temp = species_list[C_idx];
+
+        if(P_idx == -1) {
             species_list[idx] = P_temp;
+            C_temp->prev = species_list[idx];
             idx++;
-            C_temp.prev = &P_temp;    
         }
-        else{
-            C_temp.prev = P_in_list;
-        }
-        species_list[idx] = C_temp;
-        idx++;
-        for(int j=0; j<N; j++){
-            printf("%s\n", species_list[j].name);
-        }
+        else C_temp->prev = species_list[P_idx];
     }
 
-    for(int j=0; j<N; j++){
-        if(species_list[j].prev != NULL)
-            printf("%s %s\n", species_list[j].name, species_list[j].prev->name);
-    }
+    scanf("%s %s", A, B);
+    A_idx = search_value(species_list, N, A);
+    B_idx = search_value(species_list, N, B);
 
-    
+    f1 = print_ancestor_2(species_list[A_idx], B);
+    f2 = print_ancestor_2(species_list[B_idx], A);
+
+    if((f1 == 0) && (f2 == 0)) printf("TIDAK MUNGKIN\n");
+
     return 0;
 }
