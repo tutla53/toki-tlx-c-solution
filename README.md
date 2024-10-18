@@ -103,8 +103,8 @@ Solve Indonesian Online Judge 🇮🇩 <a href="https://tlx.toki.id/">TLX Compet
 │   ├── A. Dua Gelang ✅
 │   ├── B. 5 Segmen Garis ✅
 │   └── P1. Segitiga Bebek
-└── 13_Memenangkan_Kompetisi (0/7)
-    ├── A. Jawbreaker V: Cari Optimal
+└── 13_Memenangkan_Kompetisi (1/7)
+    ├── A. Jawbreaker V: Cari Optimal ✅
     ├── P1. Tebak Angka
     ├── P2. Koin Asing
     ├── P3. Karantina Bebek
