@@ -5,7 +5,7 @@
     do{\
         if(arr.count >= arr.capacity){\
             if(arr.capacity == 0) arr.capacity=256;\
-            else arr.capacity *=2;\
+            else arr.capacity = (arr.capacity*3)>>1;\
             arr.items = realloc(arr.items, arr.capacity*sizeof(*arr.items));\
         }\
         arr.items[arr.count++] = x;\
@@ -25,7 +25,7 @@ typedef struct{
 void push(Array2D_t* arr, int i, int value){
     if(i>=(*arr).capacity){
         if((*arr).capacity == 0) (*arr).capacity=256;
-        else (*arr).capacity *=2;
+        else (*arr).capacity = i+((*arr).capacity*3)>>1;
         (*arr).items = realloc((*arr).items, (*arr).capacity*sizeof(*(*arr).items));
     }
     push_back((*arr).items[i], value);
