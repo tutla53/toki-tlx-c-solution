@@ -1,16 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-#define push_back(arr, x)\
-    do{\
-        if(arr.count >= arr.capacity){\
-            if(arr.capacity == 0) arr.capacity=256;\
-            else arr.capacity = (arr.capacity*3)>>1;\
-            arr.items = realloc(arr.items, arr.capacity*sizeof(*arr.items));\
-        }\
-        arr.items[arr.count++] = x;\
-    }while(0)
-
 typedef struct{
     int *items;
     size_t count;
@@ -22,13 +12,22 @@ typedef struct{
     size_t capacity;
 } Array2D_t;
 
+void append(Array_t* arr, int value){
+    if((*arr).count >= (*arr).capacity){
+        if((*arr).capacity == 0) (*arr).capacity=256;
+        else (*arr).capacity = ((*arr).capacity*3)>>1;
+        (*arr).items = realloc((*arr).items, (*arr).capacity*sizeof(*(*arr).items));
+    }
+    (*arr).items[(*arr).count++] = value;
+}
+
 void push(Array2D_t* arr, int i, int value){
     if(i>=(*arr).capacity){
         if((*arr).capacity == 0) (*arr).capacity=256;
         else (*arr).capacity = i+((*arr).capacity*3)>>1;
         (*arr).items = realloc((*arr).items, (*arr).capacity*sizeof(*(*arr).items));
     }
-    push_back((*arr).items[i], value);
+    append(&((*arr).items[i]), value);
 }
 
 int get_value(Array2D_t arr, int i, int j){
