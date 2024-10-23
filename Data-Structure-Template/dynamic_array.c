@@ -1,56 +1,30 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+typedef int Type_T;
+
 typedef struct{
-    int *items;
+    Type_T *idx;
     size_t count;
     size_t capacity;
 } Array_t;
 
-typedef struct{
-    Array_t *items;
-    size_t capacity;
-} Array2D_t;
-
-void append(Array_t* arr, int value){
+void append(Array_t* arr, Type_T value){
     if((*arr).count >= (*arr).capacity){
         if((*arr).capacity == 0) (*arr).capacity=256;
         else (*arr).capacity = ((*arr).capacity*3)>>1;
-        (*arr).items = realloc((*arr).items, (*arr).capacity*sizeof(*(*arr).items));
+        (*arr).idx = realloc((*arr).idx, (*arr).capacity*sizeof(*(*arr).idx));
     }
-    (*arr).items[(*arr).count++] = value;
-}
-
-void push(Array2D_t* arr, int i, int value){
-    if(i>=(*arr).capacity){
-        if((*arr).capacity == 0) (*arr).capacity=256;
-        else (*arr).capacity = i+((*arr).capacity*3)>>1;
-        (*arr).items = realloc((*arr).items, (*arr).capacity*sizeof(*(*arr).items));
-    }
-    append(&((*arr).items[i]), value);
-}
-
-int get_value(Array2D_t arr, int i, int j){
-    if(i>= arr.capacity) return -1;
-    if(j>= arr.items[i].capacity) return -1;
-
-    return arr.items[i].items[j];
+    (*arr).idx[(*arr).count++] = value;
 }
 
 int main(void){
-    Array2D_t arr={0};
+    Array_t arr={0};
 
-    for(int i=0; i<10; i++){
-        for(int j=0; j<10; j++){
-            push(&arr, i, i*j);
-        }
-    } 
+    for(int i=0; i<300; i++) append(&arr, i);
 
-    for(int i=0; i<10; i++){
-        for(int j=0; j<10; j++){
-            printf("%d ", get_value(arr, i, j));
-        }
-        printf("\n");
+    for(int i=0; i<arr.count; i++){
+        printf("%d\n", arr.idx[i]);
     } 
 
     return 0;
