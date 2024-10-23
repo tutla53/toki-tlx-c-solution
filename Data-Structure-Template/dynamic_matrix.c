@@ -76,5 +76,23 @@ int main(void){
     printf("Matrix Capacity: %ld\n", mtrx.capacity);
     printf("Matrix Row: %ld\n", mtrx.row);
 
+
+    appendMatrix(&mtrx, 300, 1);
+    appendMatrix(&mtrx, 300, 2);
+    appendMatrix(&mtrx, 300, 3);
+
+    for(int i=0; i<mtrx.row; i++){
+        int len = mtrx.idx[i].count;
+        
+        if(len==0) continue;
+
+        printf("[%d] ", i);
+        for(int j=0; j<len; j++) printf("%d ", getMatrixValue(mtrx, i, j));
+        printf("\n");
+    }
+
+    printf("Matrix Capacity: %ld\n", mtrx.capacity);
+    printf("Matrix Row: %ld\n", mtrx.row);
+
     return 0;
 }
