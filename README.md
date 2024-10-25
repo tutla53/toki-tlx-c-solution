@@ -103,8 +103,9 @@ Progress(56/85)
 │   ├── A. Dua Gelang ✅
 │   ├── B. 5 Segmen Garis ✅
 │   └── P1. Segitiga Bebek
-└── 13_Memenangkan_Kompetisi (1/7)
+└── 13_Memenangkan_Kompetisi (2/8)
     ├── A. Jawbreaker V: Cari Optimal ✅
+    ├── B. Penghancuran Batu ✅    
     ├── P1. Tebak Angka
     ├── P2. Koin Asing
     ├── P3. Karantina Bebek
