@@ -16,7 +16,7 @@ int compare(const void* va, const void * vb){
     const int lenB      = strlen(nameB);
     
     if (lenA == lenB){
-         return strcmp(nameA,nameB); 
+        return strcmp(nameA,nameB); 
     }
     
     return lenA - lenB;
